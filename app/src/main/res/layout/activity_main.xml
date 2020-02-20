@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.dc.bannerpageview.banner.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:dotSize="8dp"
+        app:dotDistance="10dp"
+        app:dotGravity="center"
+        app:dotIndicatorFocus="@android:color/holo_orange_light"
+        app:dotIndicatorNormal="@android:color/holo_blue_bright"
+        app:bottomColor="#EEBEBEBE"/>
+
+</LinearLayout>
