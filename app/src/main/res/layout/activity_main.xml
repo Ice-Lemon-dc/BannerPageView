@@ -18,4 +18,24 @@
         app:dotIndicatorNormal="@android:color/holo_blue_bright"
         app:bottomColor="#EEBEBEBE"/>
 
+    <com.dc.bannerpageview.indicator.TrackIndicatorView
+        android:id="@+id/indicator_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabVisibleNums="6"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:id="@+id/indicator_view"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        />
 </LinearLayout>

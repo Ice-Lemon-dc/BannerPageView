@@ -22,6 +22,7 @@ public class FragmentManagerHelper {
 
     /**
      * 构造函数
+     *
      * @param fragmentManager 管理类FragmentManager
      * @param containerViewId 容器布局id containerViewId
      */
@@ -33,7 +34,7 @@ public class FragmentManagerHelper {
     /**
      * 添加Fragment
      */
-    public void add(Fragment fragment){
+    public void add(Fragment fragment) {
         // 开启事物
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         // 第一个参数是Fragment的容器id，需要添加的Fragment
@@ -45,7 +46,7 @@ public class FragmentManagerHelper {
     /**
      * 切换显示Fragment
      */
-    public void switchFragment(Fragment fragment){
+    public void switchFragment(Fragment fragment) {
         // 开启事物
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
 
@@ -56,9 +57,9 @@ public class FragmentManagerHelper {
         }
 
         // 2.如果容器里面没有我们就添加，否则显示
-        if(!childFragments.contains(fragment)) {
-            fragmentTransaction.add(mContainerViewId,fragment);
-        }else{
+        if (!childFragments.contains(fragment)) {
+            fragmentTransaction.add(mContainerViewId, fragment);
+        } else {
             fragmentTransaction.show(fragment);
         }
 
